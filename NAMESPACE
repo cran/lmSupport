@@ -1,0 +1,21 @@
+export(
+  lm.boxCox,
+  lm.caseAnalysis,
+  lm.clearAll,
+  lm.codeRegressors,
+  lm.correctSE,
+  lm.deltaR2,
+  lm.describeData,
+  lm.describeGroups,
+  lm.mergeData,
+  lm.mixedBar,
+  lm.mixedMeans,
+  lm.modelAssumptions,
+  lm.pointEstimates,
+  lm.readDat,
+  lm.renameVar,
+  lm.setContrasts,
+  lm.setRownames,
+  lm.sumSquares,
+  lm.writeDat
+)
