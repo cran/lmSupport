@@ -16,7 +16,7 @@ lm.describeData(data, detail = 2)
 Returns table with descriptive statistics
 }
 \author{John J. Curtin \email{jjcurtin@wisc.edu}}
-\seealso{describe lm.describeGroups}
+\seealso{describe lm.describeGroups describe.by}
 \examples{
 lm.describeData(Ornstein)
 lm.describeData(Ornstein, detail=3)

@@ -7,7 +7,7 @@ By default matches on row names but can use other variable names
 in d1 (by.x) and d2 (by.y) as needed.
 By default, includes all cases in dX and dY but can limit to 
 only matching (all.X=FALSE, all.y=FALSE) or left join (all.y=FALSE) 
-or right join (all.x=FALSE)
+or right join (all.x=FALSE).
 }
 \usage{
 lm.mergeData(dX, dY, by.x = 0, by.y = 0, all.x = TRUE, all.y = TRUE)
@@ -23,15 +23,16 @@ lm.mergeData(dX, dY, by.x = 0, by.y = 0, all.x = TRUE, all.y = TRUE)
           output, one for each row in dX that has no matching row
           in dY.  These rows will have NAs in those columns
           that are usually filled with values from dY.  The
-          default is FALSE, so that only rows with data from both
-          dX and dY are included in the output.}
+          default is TRUE, so that all rows with data from both
+          dX and dY are included in the output. In other words, 
+          it is the union of these two dataframes}
   \item{all.y}{analagous to all.x but for dY}
 }
 \details{
 see merge() for more details
 }
 \value{
-Returns merged data frame sorted by rownames.
+Returns merged data frame
 }
 \author{John J. Curtin \email{jjcurtin@wisc.edu}}
 \seealso{

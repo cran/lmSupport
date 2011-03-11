@@ -8,10 +8,11 @@ car package.  Prints tables with orginal and corrected results and returns
 corrected coefficient table
 }
 \usage{
-lm.correctSE(model)
+lm.correctSE(model, digits=3)
 }
 \arguments{
   \item{model}{an unweighted linear model, produced by \code{lm}.}
+  \item{digits}{digits to print in table output.  Default =3}
 }
 \value{
 Returns the lm coefficients table with corrected SEs and associated tests

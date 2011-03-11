@@ -5,7 +5,10 @@ function(model, Type='NORMAL', ID=row.names(model$model), one.page=TRUE)
 #type: NORMAL, CONSTANT, or LINEAR
 #ID:  Use to identify points.  Default = row.names(thedata).  NULL = no identification
 #one.page:  put all graphs on one page
-#Last updated: 2011-02-14, JJC
+
+#Revision history
+#2011-02-28:  added print to display ncvTest(), JJC
+
 
 {
   switch(toupper(Type),
@@ -44,7 +47,7 @@ function(model, Type='NORMAL', ID=row.names(model$model), one.page=TRUE)
         abline(h=0,lty=2, col="blue")
         print(spreadLevelPlot(model)) #log(abs(studentized residuals) vs. log(fitted values).
         cat('\n\n')
-        ncvTest(model)
+        print(ncvTest(model))
      },
      
      LINEAR =
