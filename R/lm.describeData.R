@@ -1,8 +1,11 @@
 lm.describeData <-
-function(data, detail = 2)
+function(data, detail = 2, digits=2)
 {
     t3 = psych::describe(data)
     t3 = data.frame(t3)
+    
+    if (!is.null(digits))  t3 = round(t3,digits)
+    
     t2 = t3[c(1:5,8,9,11,12)]
     t1 = t3[c(2:4,8,9)]
     return(switch(detail,t1, t2,t3))    

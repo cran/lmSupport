@@ -6,6 +6,7 @@ lm.caseAnalysis <- function(model, Type='RESIDUALS', ID=row.names(model$model))
 #2010-02-07, JJC
 #2010-06-08, updated to new car package.  updated to not require thedata unless needed, JJC
 #2020-06-09, modified to include model formula in titles, JJC
+#2011-03-30, updated influence plot for new cooks distance function, JJC
 {
 switch(toupper(Type),
 
@@ -97,7 +98,7 @@ switch(toupper(Type),
       par(cex.lab=1.5, cex.axis=1.2, lwd=2)  #set graphics parameters for pretty graphs
       TheTitle = paste('Influence Bubble plot', '\nModel: ', model$call[2], sep='')
       plot(hatvalues(model),rstudent(model), type='n', xlab='Hat Values', ylab='Studentized Residuals', main=TheTitle )
-      cooksize = 10*sqrt(cookd(model))/max(cookd(model))
+      cooksize = 10*sqrt(cooks.distance(model))/max(cooks.distance(model))
       points(hatvalues(model), rstudent(model),cex=cooksize)
 
       N=length(rstudent(model))
