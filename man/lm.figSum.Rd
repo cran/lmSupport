@@ -5,11 +5,12 @@
 Represents important aspects of a variable/vector both visually (histogram, rug, and density plots) and with descriptive statistics of varying detail
 }
 \usage{
-lm.figSum(TheVar,  VarName = '', AddRug = TRUE, AddDensity = TRUE, detail = 2)
+lm.figSum(TheVar,  VarName = '', IDs = NULL, AddRug = TRUE, AddDensity = TRUE, detail = 2)
 }
 \arguments{
   \item{TheVar}{A variable/vector to visualize}
   \item{VarName}{The variable name of TheVar as string. Default = ''}
+  \item{IDs}{Rownames for interactive identification of data points, Default is NULL with no identification done}
   \item{AddRug}{TRUE (default) or FALSE to include rug plot}
   \item{AddDensity}{TRUE (default) or FALSE to include density plot}
   \item{detail}{1-3 of increasing detail for descriptives using lm.describeData()}

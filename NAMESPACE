@@ -1,7 +1,6 @@
 export(
   lm.boxCox,
   lm.caseAnalysis,
-  lm.clearAll,
   lm.codeRegressors,
   lm.correctSE,
   lm.deltaR2,
@@ -18,6 +17,7 @@ export(
   lm.renameVar,
   lm.setContrasts,
   lm.setRownames,
+  lm.stripChart,
   lm.sumSquares,
   lm.writeDat
 )
