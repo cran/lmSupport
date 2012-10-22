@@ -24,7 +24,8 @@ Returns original data frame (dData) with addition of new regressors.
 \author{John J. Curtin \email{jjcurtin@wisc.edu}}
 \examples{
 dNew = Ornstein
-contrasts(dNew$nation) = lm.setContrasts(dNew$nation, Type='POC', POCList = list(c(3,-1,-1, -1),c(0,2,-1, -1), c(0,0,1,-1)))
+contrasts(dNew$nation) = lm.setContrasts(dNew$nation, Type='POC', 
+    POCList = list(c(3,-1,-1, -1),c(0,2,-1, -1), c(0,0,1,-1)))
 dNew = lm.codeRegressors(dNew,'nation')
 }
 \keyword{regression}

@@ -6,7 +6,8 @@ Creates 'rough' (i.e., not publication quality) graph for examining results form
 mixed model design includes factor IV and repeated measures across variates in separate lm models.
 }
 \usage{
-lm.mixedBar(lModels, data, GroupNames = NULL, VariateNames = NULL, GroupClusters = TRUE, LegendOffset = 0.3)
+lm.mixedBar(lModels, data, GroupNames = NULL, VariateNames = NULL,
+             GroupClusters = TRUE, LegendOffset = 0.3)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{

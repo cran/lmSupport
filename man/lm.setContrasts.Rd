@@ -4,7 +4,8 @@
 \description{
   Calculates contrast matrix for a specified contrast type.  Options include DUMMY, POC, HELMERT, EFFECTS
 }
-\usage{lm.setContrasts(TheFactor, Type = "DUMMY", RefLevel = length(levels(TheFactor)), POCList = NULL, Labels = NULL)}
+\usage{lm.setContrasts(TheFactor, Type = "DUMMY", 
+       RefLevel = length(levels(TheFactor)), POCList = NULL, Labels = NULL)}
 \arguments{
   \item{TheFactor}{factor from dataframe}
   \item{Type}{type of contrast,  Options include DUMMY (default), POC, HELMERT, or EFFECTS}
@@ -35,10 +36,15 @@
 \examples{
   d = data.frame(f=factor(c('f1', 'f2', 'f3')))
   contrasts(d$f)
-  contrasts(d$f) = lm.setContrasts(d$f, Type='DUMMY', RefLevel = 3) ##set as DUMMY with last category as reference
-  contrasts(d$f) = lm.setContrasts(d$f, Type='POC', POCList = list(c(2,-1,-1),c(0,1,-1)), Labels = c('f1_v_f2f3', 'f2_v_f3')) ##set as POC with user defined labels
-  contrasts(d$f) = lm.setContrasts(d$f, Type='HELMERT', RefLevel = 1) ##set as reverse HELMERT
-  contrasts(d$f) = lm.setContrasts(d$f, Type='EFFECTS', RefLevel = 3) ##set as EFFECTS, excluding f3 vs. grand mean contrast
+  contrasts(d$f) = lm.setContrasts(d$f, Type='DUMMY', RefLevel = 3) 
+  ##set as DUMMY with last category as reference
+  contrasts(d$f) = lm.setContrasts(d$f, Type='POC', 
+    POCList = list(c(2,-1,-1),c(0,1,-1)), Labels = c('f1_v_f2f3', 'f2_v_f3'))
+     ##set as POC with user defined labels
+  contrasts(d$f) = lm.setContrasts(d$f, Type='HELMERT', RefLevel = 1)
+     ##set as reverse HELMERT
+  contrasts(d$f) = lm.setContrasts(d$f, Type='EFFECTS', RefLevel = 3)
+     ##set as EFFECTS, excluding f3 vs. grand mean contrast
 }
 \keyword{manip}
 \keyword{regression}

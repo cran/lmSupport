@@ -1,3 +1,8 @@
+importFrom(car, Anova, avPlots, crPlots, hccm, ncvTest, qqPlot, spreadLevelPlot)
+importFrom(MASS, boxcox)
+importFrom(psych, describe)
+importFrom(gplots, barplot2)
+importFrom(gvlma, gvlma)
 export(
   lm.boxCox,
   lm.caseAnalysis,

@@ -5,7 +5,7 @@
 Calcluates and plots log-liklihoods lambda for power transformation of response variable.  
 Reports chi-square test of lambda <> 1.
 All values of Y must > 0 or function will crash.  Add offset to Y if necessary (see example).
-Default lambda range is -2 to 2.    Uses boxcox() from car package.
+Default lambda range is -2 to 2.    Uses boxcox() from \pkg{MASS} package.
 }
 \usage{
 lm.boxCox(model, lambdas = seq(-2, 2, by = 0.1))

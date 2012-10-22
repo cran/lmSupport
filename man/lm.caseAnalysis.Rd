@@ -20,7 +20,7 @@ lm.caseAnalysis(model, Type = "RESIDUALS", ID = row.names(model$model))
 \references{
 Fox, J. (1991). 
 Regression diagnostics. SAGE Series (79)
-Quantitative Applictions in the Social Science.
+Quantitative Applications in the Social Science.
 }
 \author{John J. Curtin \email{jjcurtin@wisc.edu}}
 \examples{
