@@ -1,21 +1,46 @@
-importFrom(car, Anova, avPlots, crPlots, hccm, ncvTest, qqPlot, spreadLevelPlot)
-importFrom(MASS, boxcox)
+importFrom(car, Anova, avPlots, boxCox, crPlots, hccm, ncvTest, qqPlot, spreadLevelPlot)
 importFrom(psych, describe)
-importFrom(gplots, barplot2)
 importFrom(gvlma, gvlma)
+importFrom(AICcmodavg, predictSE.mer)
+importFrom(lme4, isREML)
+importFrom(pbkrtest, KRmodcomp, getKR)
 export(
+  dfMerge,
+  dfReadDat,
+  dfRemoveCases,
+  dfRownames,
+  dfWriteDat,
+  figConfidenceBand,
+  figStripChart,
+  modelAssumptions,
+  modelBoxCox,
+  modelCaseAnalysis,
+  modelCompare,
+  modelCorrectSE,
+  modelEffectSizes,
+  modelErrors,
+  modelPredictions,
+  modelR2,
+  modelSummary,
+  varContrasts,
+  varDescribe,
+  varDescribeBy,
+  varParse,
+  varPlot,
+  varRecode,
+  varRegressors,
+  varRename,
+  varReverse,
+  varScore,
+  #Deprecated functions
   lm.boxCox,
-  lm.caseAnalysis,
   lm.codeRegressors,
   lm.correctSE,
+  lm.describeGroups,
   lm.deltaR2,
   lm.describeData,
-  lm.describeGroups,
   lm.figSum,
   lm.mergeData,
-  lm.mixedBar,
-  lm.mixedMeans,
-  lm.modelAssumptions,
   lm.pointEstimates,
   lm.readDat,
   lm.removeCases,
