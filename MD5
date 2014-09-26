@@ -1,4 +1,4 @@
-d33f8df360d9f57e2ec0bd0864c30aac *DESCRIPTION
+2811cfe4a2a4e93517b327e8c9c1d075 *DESCRIPTION
 f7701c83eb8d4d3693549a47bfd4e97c *NAMESPACE
 13507a72ca3b3daaf95dcf790819a4ae *R/dfMerge.R
 63a3ad70f25389745514c42a730839e6 *R/dfReadDat.R
@@ -13,14 +13,14 @@ eedbc516f5551982978aa085aa761aac *R/dfRownames.R
 e58e30172194f0016499e1f4aff4fb44 *R/modelCaseAnalysis.R
 448ebfdce4cd879e01e7c434fcc93bbc *R/modelCompare.R
 045e9b10e390c027b02cf044c3e57651 *R/modelCorrectSE.R
-71cc604cccb97a4bd0522867b1d67836 *R/modelEffectSizes.R
+0503f6bf49ad5769ced477167d7c75b1 *R/modelEffectSizes.R
 5edfad6b1186a3446d4b11241bfc68fa *R/modelErrors.R
 759714a90641eac09e68b1e35d652117 *R/modelPredictions.R
 f9bd23cff9aef39690f45226ea703b6b *R/modelR2.R
 2f21eea136411a68871592eb81f3fdc1 *R/modelSummary.R
 2970e0221ce485cce9e9874db0558efa *R/varContrasts.R
 e4fef6e901ac8572598a9f392a8156fc *R/varDescribe.R
-15bb4620d1551f96221a0f89e41932a5 *R/varDescribeBy.R
+06bd90d52161c8f8fac4d50e8ad99cb7 *R/varDescribeBy.R
 a7819ddd433e9dbab60410795a330f72 *R/varParse.R
 3e62aacd1bd8f2e29f619638ed3e03bd *R/varPlot.R
 89e042cca278f1c2d13b654a12d05339 *R/varRecode.R
@@ -48,7 +48,7 @@ d40b82707d3b5781673024f9bd07ff50 *man/modelR2.Rd
 529ac5903e521874a02275309b4bc3e8 *man/modelSummary.Rd
 6a4035e6f7c820fc709f2b59a3038413 *man/varContrasts.Rd
 3e6179f3d495aa7688eb15702ca83050 *man/varDescribe.Rd
-ecb0b7a5efca86e1fe018c56665d5023 *man/varDescribeBy.Rd
+9ee5cbb3f15613de624bb3d15d3bfe0b *man/varDescribeBy.Rd
 abbc76ec39f9c554ca701ce0a715a200 *man/varParse.Rd
 636eb71de84173fa5d834eec4ce8d033 *man/varPlot.Rd
 c7f950b4297b042535ff6ad7287b194b *man/varRecode.Rd

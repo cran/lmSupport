@@ -1,22 +1,23 @@
 \name{varDescribeBy}
 \alias{varDescribeBy}
-\title{Provides common desriptives for single DV by factor(s)}
+\title{Provides common desriptives for dataframe by factor(s)}
 \description{
-Returns Group N's, Missing, Means, SDs, Mins, and Maxs for DV by a list of factors
-Removes missing values from calculation of all descriptives (except of course Missing)
+Provides commons descriptive statistics for a data frame 
+split on some factor or combination of factors.
+Essentially a wrapper for varDescribe() and by().
 }
 \usage{
-varDescribeBy(DV, IVList)
+varDescribeBy(Data, IVList)
 }
 \arguments{
-  \item{DV}{dependent variable from data frame}
+  \item{Data}{a dataframe}
   \item{IVList}{list of one or more factors from data frame}
 }
 \value{
-Returns list of N, Miss, Mean, SD, Min, Max
+An object of class "by", giving the results from varDescribe() applied to each subset. 
 }
 \author{John J. Curtin \email{jjcurtin@wisc.edu}}
 \examples{
-varDescribeBy(Adler$rating,list(Adler$expectation,Adler$instruction))
+varDescribeBy(Adler,list(Adler$expectation,Adler$instruction))
 }
 \keyword{summary}

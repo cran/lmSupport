@@ -27,7 +27,7 @@ function(Model, Print=TRUE, Digits=4)
   
   #Delta R2. Not defined for for any parameter in models without intercept 
   #or for intercept parameter itself in any model
-  if (HasIntercept) {
+  if (HasIntercept && nEffects > 1) {
     tSS[2:nEffects,4] = tSS[2:nEffects,1] / SST 
   }
   
