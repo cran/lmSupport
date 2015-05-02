@@ -11,7 +11,7 @@ function(ModelC, ModelA)
   termsA <- attr(terms(ModelA), "term.labels")
   termsC <- attr(terms(ModelC), "term.labels")
   
-  if (!all(termsC %in% termsA))  stop('Invalid model comparison: modelC is not a subset of modelA')
+  if (!all(termsC %in% termsA))  stop('Invalid model comparison:  modelC is not a subset of modelA')
 
   nC = ModelC$df.residual + pC
   nA = ModelA$df.residual + pA
