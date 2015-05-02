@@ -8,8 +8,8 @@ function(ModelC, ModelA)
   pA = length(coef(ModelA))
   if (!(pA > pC))  stop('Invalid model comparison:  modelA does not have more parameters than modelC')
   
-  termsA <- attr(terms(ModelA), "term.labels")
   termsC <- attr(terms(ModelC), "term.labels")
+  termsA <- attr(terms(ModelA), "term.labels")
   
   if (!all(termsC %in% termsA))  stop('Invalid model comparison:  modelC is not a subset of modelA')
 
