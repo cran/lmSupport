@@ -4,8 +4,6 @@
 \description{
 Calculates F-test to compare two models to determine if ModelA significantly reduces SSE from ModelC.  Also reports Partial eta2 and Delta R2 for this model comparison.
 ModelC should contain subset of ModelA regressors.
-NOTE: Does not check that model C is subset of model A.  
-User must use caution and verify this themselves.}
 \usage{
 modelCompare(ModelC, ModelA)
 }
