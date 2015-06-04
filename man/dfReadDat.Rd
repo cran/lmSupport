@@ -9,15 +9,16 @@ If variable named SubID (default) or other text supplied by SubID variable
 exists in dat file, row names will be set with this variable 
 and then variable is removed from new data frame.
 }
-\usage{dfReadDat(File, SubID = "SubID")}
+\usage{dfReadDat(File, SubID = "SubID", SubIDDigits = NULL)}
 \arguments{
   \item{File}{File name for .dat file including extension}
   \item{SubID}{String to indicate name of SubID variable.  Default is 'SubID'.  If set to NULL, rownames will not be altered}
+  \item{SubIDDigits}{Length of SubID rowname string.  If NULL, will be set to max length in data}
 }
 \value{returns a data frame}
 \author{John J. Curtin \email{jjcurtin@wisc.edu}}
 \seealso{
-read.table(), read.delim(), write.table()
+read.table(), read.delim(), write.table(), dfRownames()
 }
 \examples{
 ##dfReadDat('Sample.dat)   #not executable unless Sample.dat exists in path

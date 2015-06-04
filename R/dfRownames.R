@@ -1,11 +1,14 @@
 dfRownames <-
-function(Data, SubID = 'SubID', FixedWidth = TRUE, Remove=TRUE)
+function(Data, SubID = 'SubID', FixedWidth = TRUE, Remove=TRUE, MaxNumDigits = NULL)
 #Sets the row names of the data frame to the variable name listed as SubID.
 #SubID should be text name of variable.  
 #Also keeps number of characters constant by default and removes SubID by default
 {
   TheRowNames = Data[,SubID]
-  MaxNumDigits = floor(log10(max(TheRowNames)))+1 
+  
+  #determine number of digits for SubID.  If null, set to max observed length
+  if(is.null(MaxNumDigits)) MaxNumDigits = floor(log10(max(TheRowNames)))+1 
+  
   if (FixedWidth)  
     {
        FixedNames= NA

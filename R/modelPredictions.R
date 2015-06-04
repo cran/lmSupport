@@ -36,7 +36,7 @@ modelPredictions <- function(Model, Data = NULL, Label = NULL, Type = 'response'
   
     if ((class(Model)[1] == 'lmerMod') || (class(Model)[1] == 'glmerMod'))
     {
-      Predictions[,c(1,4)] = predictSE.mer(Model, Data, se.fit = TRUE, type = Type, level = 0, print.matrix = TRUE)
+      Predictions[,c(1,4)] = predictSE(Model, Data, se.fit = TRUE, type = Type, level = 0, print.matrix = TRUE)
       Predictions[,2] = Predictions[,1] - Predictions[,4]
       Predictions[,3] = Predictions[,1] + Predictions[,4]
     }

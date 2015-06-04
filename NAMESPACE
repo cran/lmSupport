@@ -1,7 +1,7 @@
 importFrom(car, Anova, avPlots, boxCox, crPlots, hccm, ncvTest, qqPlot, spreadLevelPlot)
 importFrom(psych, describe)
 importFrom(gvlma, gvlma)
-importFrom(AICcmodavg, predictSE.mer)
+importFrom(AICcmodavg, predictSE)
 importFrom(lme4, isREML)
 importFrom(pbkrtest, KRmodcomp, getKR)
 export(
@@ -25,6 +25,7 @@ export(
   varContrasts,
   varDescribe,
   varDescribeBy,
+  varOdd,
   varParse,
   varPlot,
   varRecode,
