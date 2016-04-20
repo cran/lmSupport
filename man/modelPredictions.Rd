@@ -14,7 +14,8 @@ modelPredictions(Model, Data=NULL, Label = NULL, Type = 'response')
   \item{Type}{'response' or 'link'.  Used only for glm objects.  see predict()}
 }
 \value{
-If Data=NULL, returns a numeric vector of predicted values for sample.   If Data are provided, adds four new columns at the front of the dataframe  These variables are named Predicted (prediced value), CILo (lower bound of - 1 SE from Predicted), CIHi (upper bound of + 1 SE), and SE (Standard error of predicted value).  If Label is not NULL, than Label is appended to end of these four variable names.
+If Data=NULL, returns a numeric vector of predicted values for sample.   If Data are provided, adds four new columns at the front of the dataframe  These variables are named Predicted (prediced value), CILo (lower bound of - 1 SE from Predicted), CIHi (upper bound of + 1 SE), and SE (Standard error of predicted value).  NOTE: For GLM, +-1 SE are calculated on the link scale and then converted to the response scale (which will be asymetric) if Type = response.  
+If Label is not NULL, than Label is appended to end of these four variable names.
 }
 \author{John J. Curtin \email{jjcurtin@wisc.edu}}
 \seealso{

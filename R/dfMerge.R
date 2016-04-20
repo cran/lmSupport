@@ -11,7 +11,7 @@ function(DataX, DataY, ByX=0, ByY=0, AllX=TRUE, AllY=TRUE, AddVars = TRUE)
   {
   if (AddVars==TRUE)  #adding variables, matching on cases
   {
-   dXY = merge(x=DataX,y=DataY,by.x=ByX, by.y=ByY, all.x=AllX, all.y =AllY)
+   dXY = merge(x=DataX,y=DataY,by.x=ByX, by.y=ByY, all.x=AllX, all.y =AllY, sort=FALSE)
    row.names(dXY) = dXY$Row.names
    dXY$Row.names = NULL
   }

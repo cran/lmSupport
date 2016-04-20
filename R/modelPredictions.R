@@ -33,6 +33,31 @@ modelPredictions <- function(Model, Data = NULL, Label = NULL, Type = 'response'
       Predictions[,4] = Predictions[,1] - Predictions[,2] 
       Predictions = as.data.frame(Predictions)   
     }
+    
+    #glm
+    if (class(Model)[1] == 'glm')  
+    {
+      
+      #get tmp predictions on link scale
+      tmpPred = predict(Model,newdata=Data, type = "link", se.fit = TRUE)
+      upr <- tmpPred$fit + tmpPred$se.fit
+      lwr <- tmpPred$fit - tmpPred$se.fit
+      fit <- tmpPred$fit
+      
+      if (Type == 'response')  #convert to response if needed,  otherwise stays in link scale
+      {
+        fit <- Model$family$linkinv(fit)
+        upr <- Model$family$linkinv(upr)
+        lwr <- Model$family$linkinv(lwr)
+      }
+      
+      #put into Predictions matrix
+      Predictions[,1] = fit
+      Predictions[,2] = lwr
+      Predictions[,3] = upr
+      Predictions[,4] = Predictions[,1] - Predictions[,2]
+      Predictions = as.data.frame(Predictions)   
+    }    
   
     if ((class(Model)[1] == 'lmerMod') || (class(Model)[1] == 'glmerMod'))
     {

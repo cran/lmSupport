@@ -4,6 +4,17 @@ importFrom(gvlma, gvlma)
 importFrom(AICcmodavg, predictSE)
 importFrom(lme4, isREML)
 importFrom(pbkrtest, KRmodcomp, getKR)
+importFrom(grDevices, dev.new)
+importFrom(graphics, abline, hist, identify, lines, par,
+             plot, points, polygon, rug, stripchart)
+importFrom(stats, AIC, BIC, IQR, as.formula, coef,
+             confint, contr.helmert, contr.sum, contr.treatment,
+             cooks.distance, covratio, density, deviance,
+             dfbetas, dnorm, fitted.values, hatvalues, logLik,
+             median, model.matrix, nobs, pchisq, pf, predict,
+             printCoefmat, pt, qf, qt, residuals, rstudent,
+             sd, terms)
+importFrom(utils, read.table, write.table)
 export(
   dfMerge,
   dfReadDat,
