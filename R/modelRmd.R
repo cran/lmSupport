@@ -1,5 +1,6 @@
-varMarkdown <- function(effect, mod, modsum, statistic='t', B=1, CI=B, pe=2)
+modelRmd <- function(effect, mod, B=1, CI=B, statistic='t',pe=2)
 {
+  modsum = modelSummary(mod)
   results =''
 
   if (is.numeric(pe)){

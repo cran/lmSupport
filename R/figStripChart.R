@@ -1,4 +1,4 @@
-figStripChart <- function(x, side=1, sshift=0.3, col='gray', pch=15, cex= 0.2, adjoffset=1) {
+figStripChart <- function(x, side=1, sshift=0.3, adjoffset=1, strip.col='gray', strip.pch=15, strip.cex= 0.2) {
 # coded by Dr Steven J. Murdoch (http://www.cl.cam.ac.uk/~sjm217/index.html#contact)
 # Draw a stripchart on an axis, showing marginal frequency
 # TODO: Does not handle log axes well 
@@ -7,6 +7,13 @@ figStripChart <- function(x, side=1, sshift=0.3, col='gray', pch=15, cex= 0.2, a
 # col of points
 # pch of points
 # cex of points
+  
+  
+#get default if not over-rided by passing in
+if (is.null(strip.col)) strip.col = getOption('FigPars')$strip.col 
+if (is.null(strip.pch)) strip.pch = getOption('FigPars')$strip.pch
+if (is.null(strip.cex)) strip.cex = getOption('FigPars')$strip.cex 
+  
 
  if (side==1){
    flip <- 1# Does the outside of the plot have larger or smaller vales
@@ -65,6 +72,6 @@ figStripChart <- function(x, side=1, sshift=0.3, col='gray', pch=15, cex= 0.2, a
  oldxpd <- par(xpd = TRUE)
  on.exit(par(oldxpd))
 
- stripchart(x, method="stack", vertical=yaxis, offset=offset, pch=pch,
-            cex=cex, add=TRUE, at=base+shift+stripshift, col=col)
+ stripchart(x, method="stack", vertical=yaxis, offset=offset, pch=strip.pch,
+            cex=strip.cex, add=TRUE, at=base+shift+stripshift, col=strip.col)
 }

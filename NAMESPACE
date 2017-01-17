@@ -1,12 +1,14 @@
 importFrom(car, Anova, avPlots, boxCox, crPlots, hccm, ncvTest, qqPlot, spreadLevelPlot)
 importFrom(psych, describe)
+importFrom(pwr, pwr.f2.test)
+importFrom(gplots,barplot2)
 importFrom(gvlma, gvlma)
 importFrom(AICcmodavg, predictSE)
 importFrom(lme4, isREML)
 importFrom(pbkrtest, KRmodcomp, getKR)
-importFrom(grDevices, dev.new)
-importFrom(graphics, abline, hist, identify, lines, par,
-             plot, points, polygon, rug, stripchart)
+importFrom(grDevices, dev.new, pdf, tiff)
+importFrom(graphics, abline, axis, hist, identify, layout, layout.show, lines, mtext,
+           par, plot, points, polygon, rug, segments, stripchart, text)
 importFrom(stats, AIC, BIC, IQR, as.formula, coef,
              confint, contr.helmert, contr.sum, contr.treatment,
              cooks.distance, covratio, density, deviance,
@@ -21,8 +23,20 @@ export(
   dfRemoveCases,
   dfRownames,
   dfWriteDat,
+  figAxis,
+  figBarPlot,
   figConfidenceBand,
+  figErrBars,
+  figLabDefaults,
+  figLayout,
+  figLegend,
+  figLines,
+  figNewDevice,
+  figPlotRegion,
+  figPoints,
+  figSetDefaults,
   figStripChart,
+  figText,
   modelAssumptions,
   modelBoxCox,
   modelCaseAnalysis,
@@ -30,8 +44,10 @@ export(
   modelCorrectSE,
   modelEffectSizes,
   modelErrors,
+  modelPower,
   modelPredictions,
   modelR2,
+  modelRmd,
   modelSummary,
   varContrasts,
   varDescribe,

@@ -14,7 +14,7 @@ function(TheVar, VarName = '', IDs = NULL, AddPoints = 'Strip', AddDensity=TRUE,
   HistData = hist(TheVar, main='', xlab=VarName)
   
   switch(toupper(AddPoints),
-     STRIP = {figStripChart(TheVar,col='red', , cex= 0.3)},
+     STRIP = {figStripChart(TheVar,strip.col='red', , strip.cex= 0.3)},
      RUG = {rug(TheVar,col='red')}
   )
 
