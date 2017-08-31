@@ -38,7 +38,8 @@ Returns the lm coefficients table with corrected SEs and associated tests
 hccm() in car package
 }
 \examples{
-m = lm(interlocks~assets+nation, data=Ornstein)
-modelCorrectSE(m)
+##NOT RUN
+##m = lm(interlocks~assets+nation, data=Ornstein)
+##modelCorrectSE(m)
 }
 \keyword{regression}

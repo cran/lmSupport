@@ -19,8 +19,9 @@ Returns table with descriptive statistics rounded to digits.
 \author{John J. Curtin \email{jjcurtin@wisc.edu}}
 \seealso{describe lm.describeGroups describe.by}
 \examples{
-varDescribe(Ornstein)
-varDescribe(Ornstein, Detail=3)
-varDescribe(Ornstein, Detail=2, Digits=1)
+##NOT RUN
+##varDescribe(Ornstein)
+##varDescribe(Ornstein, Detail=3)
+##varDescribe(Ornstein, Detail=2, Digits=1)
 }
 \keyword{manip}

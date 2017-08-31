@@ -24,7 +24,8 @@ Returns a list with fields for effect sizes, SSE, and SST.
 Anova()
 }
 \examples{
-m = lm(interlocks~assets+nation, data=Ornstein)
-modelEffectSizes(m)
+##NOT RUN
+##m = lm(interlocks~assets+nation, data=Ornstein)
+##modelEffectSizes(m)
 }
 \keyword{regression}

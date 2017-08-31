@@ -24,8 +24,9 @@ Prints descriptive statistics table and creates graphic as side effect.  Returns
 hist(), rug(), varStripPlot(), density(), varDescribe(), describe(), identify()
 }
 \examples{  
-varPlot(Prestige$income, 'Income') #default use strip
-varPlot(Prestige$income, AddPoints='RUG')
-varPlot(Prestige$income, IDs=rownames(Prestige))
+##NOT RUN
+##varPlot(Prestige$income, 'Income') #default use strip
+##varPlot(Prestige$income, AddPoints='RUG')
+##varPlot(Prestige$income, IDs=rownames(Prestige))
 }
 \keyword{ descriptives }

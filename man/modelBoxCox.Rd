@@ -24,7 +24,8 @@ Journal of the Royal Statistical Society, 26, 211-252.
 boxCox(), boxcox()
 }
 \examples{
-m = lm(interlocks + 1 ~ assets+nation, data=Ornstein)
-modelBoxCox(m)
+##Not run
+##m = lm(interlocks + 1 ~ assets+nation, data=Ornstein)
+##modelBoxCox(m)
 }
 \keyword{regression}

@@ -24,7 +24,8 @@ Returns a list with results for model.
 \author{John J. Curtin \email{jjcurtin@wisc.edu}}
 \seealso{summary, modelR2}
 \examples{
-m = lm(interlocks~assets+nation, data=Ornstein)
-modelSummary(m)
+##NOT RUN
+##m = lm(interlocks~assets+nation, data=Ornstein)
+##modelSummary(m)
 }
 \keyword{regression}

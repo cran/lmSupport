@@ -28,11 +28,12 @@ Quantitative Applictions in the Social Science.
 }
 \author{John J. Curtin \email{jjcurtin@wisc.edu}}
 \examples{
-m = lm(interlocks~assets+nation, data=Ornstein)
-Cases = modelCaseAnalysis(m,'RESIDUALS')
-Ornstein[Cases$Rownames,]
+##NOT RUN
+##m = lm(interlocks~assets+nation, data=Ornstein)
+##Cases = modelCaseAnalysis(m,'RESIDUALS')
+##Ornstein[Cases$Rownames,]
 
-modelCaseAnalysis(m,'DFBETAS')
-modelCaseAnalysis(m,'DFBETAS', 'assets')
+##modelCaseAnalysis(m,'DFBETAS')
+##modelCaseAnalysis(m,'DFBETAS', 'assets')
 }
 \keyword{regression}

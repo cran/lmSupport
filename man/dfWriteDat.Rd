@@ -22,8 +22,9 @@ no append, no quote, separator is tab, no rownames, yes for columnns.
 read.table(), read.delim(), write.table()
 }
 \examples{
-dfWriteDat(Ornstein, File="Test1.dat")
-dfWriteDat(Ornstein, File="Test2.dat", SubID = 'ID')
-dfWriteDat(Ornstein, File="Test3.dat", SubID = NULL)
+##Not run
+##dfWriteDat(Ornstein, File="Test1.dat")
+##dfWriteDat(Ornstein, File="Test2.dat", SubID = 'ID')
+##dfWriteDat(Ornstein, File="Test3.dat", SubID = NULL)
 }
 \keyword{manip}

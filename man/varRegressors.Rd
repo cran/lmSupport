@@ -23,9 +23,10 @@ Returns original data frame (Data) with addition of new regressors.
 }
 \author{John J. Curtin \email{jjcurtin@wisc.edu}}
 \examples{
-d = Ornstein
-contrasts(d$nation) = varContrasts(d$nation, Type='POC', 
-   POCList = list(c(3,-1,-1, -1),c(0,2,-1, -1), c(0,0,1,-1)))
-d = varRegressors(d,'nation')
+##NOT RUN
+##d = Ornstein
+##contrasts(d$nation) = varContrasts(d$nation, Type='POC', 
+##   POCList = list(c(3,-1,-1, -1),c(0,2,-1, -1), c(0,0,1,-1)))
+##d = varRegressors(d,'nation')
 }
 \keyword{regression}

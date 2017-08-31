@@ -1,5 +1,6 @@
-modelPower <- function(u=NULL, v=NULL, alpha=0.05, power=NULL, f2=NULL, peta2=NULL, dR2=NULL, R2=NULL)
+modelPower <- function(pc=NULL, pa=NULL, N=NULL, alpha=0.05, power=NULL, f2=NULL, peta2=NULL, dR2=NULL, R2=NULL)
 {
+  #SET UP EFFECT SIZE##################
   nEffs = 0
   if (!is.null(f2))
   {
@@ -23,13 +24,27 @@ modelPower <- function(u=NULL, v=NULL, alpha=0.05, power=NULL, f2=NULL, peta2=NU
     stop('Must specify either f2, peta2, or both dR2 and R2')
   }
 
+  #SET UP U and V if needed##############
+  u = pa-pc
+  if(!is.null(N))
+  {
+    v = N-pa
+  }
+  else
+  {
+    v=NULL
+  }
   
-  results=pwr.f2.test(u, v, f2 , sig.level = alpha, power)
+  #CONDUCT POWER ANALYSIS###########################
+  results=pwr.f2.test(u=u, v=v, f2=f2 , sig.level = alpha, power=power)
+  
   
   cat('Results from Power Analysis\n\n')
   cat(EffTxt)
-  cat(sprintf('u =     %i \n', results$u))
-  cat(sprintf('v =     %.1f \n', results$v))
-  cat(sprintf('alpha = %.3f \n', results$sig.level))
+  cat(sprintf('pa =     %i \n', pa))
+  cat(sprintf('pc =     %i \n', pc))
+  cat(sprintf('alpha = %.3f \n\n', results$sig.level))
+  
+  cat(sprintf('N = %.3f \n', results$v+pa))
   cat(sprintf('power = %.3f \n', results$power))
 }

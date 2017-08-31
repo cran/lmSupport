@@ -9,7 +9,7 @@ figLabDefaults <- function()
                  errbars.cap=0.025, errbars.lwd=2, errbars.col='black',        #error/ci bars (outside of barplot)
                  lab.cex=1.25, lab.font=2, lab.line=2.5,                       #axis labels for axis
                  layout.display=TRUE,                                          #layout for multi-panels
-                 leg.lwd=1, leg.font=2,leg.cex=1, leg.bty='n',                 #legend
+                 leg.lty=1, leg.lwd=1, leg.font=2,leg.cex=1, leg.bty='n',      #legend
                  lines.lwd=2,lines.col='black', lines.lty=1, lines.pch=NA,     #lines
                  points.lwd=2, points.col='black', points.bg='white', points.cex=1, points.pch=21, #points
                  scale.cex=1, scale.font=1,scale.lwd=1,                        #axis scale for axis

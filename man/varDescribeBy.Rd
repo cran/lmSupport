@@ -18,6 +18,7 @@ An object of class "by", giving the results from varDescribe() applied to each s
 }
 \author{John J. Curtin \email{jjcurtin@wisc.edu}}
 \examples{
-varDescribeBy(Adler,list(Adler$expectation,Adler$instruction))
+##NOT RUN
+##varDescribeBy(Adler,list(Adler$expectation,Adler$instruction))
 }
 \keyword{summary}

@@ -24,8 +24,9 @@ Returns a list with results for model comparison, sses, and other relevant field
 }
 \author{John J. Curtin \email{jjcurtin@wisc.edu}}
 \examples{
-mC = lm(interlocks~assets, data=Ornstein)
-mA = lm(interlocks~assets+nation, data=Ornstein)
-modelCompare(mC, mA)
+##NOT RUN
+##mC = lm(interlocks~assets, data=Ornstein)
+##mA = lm(interlocks~assets+nation, data=Ornstein)
+##modelCompare(mC, mA)
 }
 \keyword{regression}

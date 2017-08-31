@@ -1,7 +1,7 @@
 importFrom(car, Anova, avPlots, boxCox, crPlots, hccm, ncvTest, qqPlot, spreadLevelPlot)
 importFrom(psych, describe)
 importFrom(pwr, pwr.f2.test)
-importFrom(gplots,barplot2)
+importFrom(gplots, barplot2)
 importFrom(gvlma, gvlma)
 importFrom(AICcmodavg, predictSE)
 importFrom(lme4, isREML)
@@ -53,6 +53,7 @@ export(
   varDescribe,
   varDescribeBy,
   varOdd,
+  varPadString,
   varParse,
   varPlot,
   varRecode,

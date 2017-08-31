@@ -16,7 +16,8 @@ Returns vector of model errors (residuals) from sample
 \author{John J. Curtin \email{jjcurtin@wisc.edu}}
 \seealso{residuals, lm}
 \examples{
-m = lm(interlocks~assets+nation, data=Ornstein)
-modelErrors(m)
+##NOT RUN
+##m = lm(interlocks~assets+nation, data=Ornstein)
+##modelErrors(m)
 }
 \keyword{manip}

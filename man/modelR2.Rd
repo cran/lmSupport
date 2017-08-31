@@ -17,7 +17,8 @@ Returns full list object from modelSummary() with many stats
 \author{John J. Curtin \email{jjcurtin@wisc.edu}}
 \seealso{lm, modelSummary, summary}
 \examples{
-m = lm(interlocks~assets+nation, data=Ornstein)
-modelR2(m)
+##NOT RUN
+##m = lm(interlocks~assets+nation, data=Ornstein)
+##modelR2(m)
 }
 \keyword{manip}
