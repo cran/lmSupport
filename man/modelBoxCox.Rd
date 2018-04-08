@@ -25,7 +25,7 @@ boxCox(), boxcox()
 }
 \examples{
 ##Not run
-##m = lm(interlocks + 1 ~ assets+nation, data=Ornstein)
+##m = lm(FPS + 99 ~ BAC+TA, data=BAC)
 ##modelBoxCox(m)
 }
 \keyword{regression}

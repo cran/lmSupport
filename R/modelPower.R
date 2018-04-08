@@ -47,4 +47,4 @@ modelPower <- function(pc=NULL, pa=NULL, N=NULL, alpha=0.05, power=NULL, f2=NULL
   
   cat(sprintf('N = %.3f \n', results$v+pa))
   cat(sprintf('power = %.3f \n', results$power))
-}
+} 

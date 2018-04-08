@@ -20,7 +20,7 @@ This is a flexible routine to score measures that consist of sums of items.
 \value{Returns vector of total scores for each participant}
 \author{John J. Curtin \email{jjcurtin@wisc.edu}}
 \examples{
-##Same code not executable with sample dataframe
+##not run
 ##varScore(d, c('I1', 'I3', 'I4'), Reverse= c('I2', 'I5'), 
 ##         Range = c(1,5), Prorate=TRUE, MaxMiss = .25) 
 }

@@ -11,13 +11,11 @@ dfRemoveCases(Data, Cases)
 }
 \arguments{
   \item{Data}{a dataframe}
-  \item{Cases}{a vector of numeric or character case IDs}
+  \item{Cases}{a vector of numeric or character case IDs/rownames}
 }
 \value{Returns dataframe with cases removed.}
 \author{John J. Curtin \email{jjcurtin@wisc.edu}}
 \examples{
-##Not run
-##d = dfRemoveCases(Prestige, c('bookbinders')) #data from car package
-##d = dfRemoveCases(Davis, c(1,2,4))        #data from car package
+d = dfRemoveCases(BAC, c('0125', '0111'))
 }
 \keyword{manip}

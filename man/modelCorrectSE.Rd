@@ -39,7 +39,7 @@ hccm() in car package
 }
 \examples{
 ##NOT RUN
-##m = lm(interlocks~assets+nation, data=Ornstein)
+##m = lm(FPS~BAC+TA, data=BAC)
 ##modelCorrectSE(m)
 }
 \keyword{regression}

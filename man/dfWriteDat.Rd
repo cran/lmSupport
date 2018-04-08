@@ -14,7 +14,7 @@ Will add rownames as a first column in .dat file and label this column with SubI
 }
 \details{
 Uses these parameters with write.table
-no append, no quote, separator is tab, no rownames, yes for columnns.
+no append, quote, separator is tab, no rownames, yes for columnns.
 }
 \value{no return value but creates .dat file in current wd}
 \author{John J. Curtin \email{jjcurtin@wisc.edu}}
@@ -23,8 +23,9 @@ read.table(), read.delim(), write.table()
 }
 \examples{
 ##Not run
-##dfWriteDat(Ornstein, File="Test1.dat")
-##dfWriteDat(Ornstein, File="Test2.dat", SubID = 'ID')
-##dfWriteDat(Ornstein, File="Test3.dat", SubID = NULL)
+##data(BAC)
+##dfWriteDat(BAC, File="Test1.dat")
+##dfWriteDat(BAC, File="Test2.dat", SubID = 'ID')
+##dfWriteDat(BAC, File="Test3.dat", SubID = NULL)
 }
 \keyword{manip}

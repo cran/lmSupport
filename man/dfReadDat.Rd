@@ -3,7 +3,7 @@
 \title{Opens a tab-delimited dat file with typical Curtin lab settings}
 \description{
 Opens a tab-delimited data file with standard Curtin lab format which include
-using a header and setting delimiter to tab.
+using a header and setting delimiter to tab and as.is=TRUE
 
 If variable named SubID (default) or other text supplied by SubID variable 
 exists in dat file, row names will be set with this variable 
@@ -21,7 +21,7 @@ and then variable is removed from new data frame.
 read.table(), read.delim(), write.table(), dfRownames()
 }
 \examples{
-##dfReadDat('Sample.dat)   #not executable unless Sample.dat exists in path
-##dfReadDat('Sample.dat, SubID = 'subnum')   #not executable unless Sample.dat exists in path
+##dfReadDat('Sample1.dat)   #not executable unless Sample1.dat exists in path
+##dfReadDat('Sample2.dat, SubID = 'subnum')   #not executable unless Sample2.dat exists in path
 }
 \keyword{manip}

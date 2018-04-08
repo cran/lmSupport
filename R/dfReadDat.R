@@ -6,7 +6,7 @@ function(File, SubID= 'SubID', SubIDDigits= NULL)
 #row names will be set with this variable and then variable is removed from data frame
 #SubIDDigits sets lenght of SubID rowname string. If NULL, determined from data
 {
-  d = read.table(File, header=TRUE, sep='\t')
+  d = read.table(File, header=TRUE, sep='\t', as.is=TRUE)
   if(!is.null(SubID) && is.element(SubID, names(d)))
   {
     d = dfRownames(d,SubID = SubID, MaxNumDigits= SubIDDigits)

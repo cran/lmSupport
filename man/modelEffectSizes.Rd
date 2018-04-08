@@ -25,7 +25,7 @@ Anova()
 }
 \examples{
 ##NOT RUN
-##m = lm(interlocks~assets+nation, data=Ornstein)
+##m = lm(FPS~BAC+TA, data=BAC)
 ##modelEffectSizes(m)
 }
 \keyword{regression}

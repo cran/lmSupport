@@ -29,9 +29,9 @@ Quantitative Applictions in the Social Science.
 \author{John J. Curtin \email{jjcurtin@wisc.edu}}
 \examples{
 ##NOT RUN
-##m = lm(interlocks~assets+nation, data=Ornstein)
+##m = lm(FPS~BAC+TA, data=BAC)
 ##Cases = modelCaseAnalysis(m,'RESIDUALS')
-##Ornstein[Cases$Rownames,]
+##BAC[Cases$Rownames,]
 
 ##modelCaseAnalysis(m,'DFBETAS')
 ##modelCaseAnalysis(m,'DFBETAS', 'assets')

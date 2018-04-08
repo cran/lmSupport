@@ -25,8 +25,9 @@ hist(), rug(), varStripPlot(), density(), varDescribe(), describe(), identify()
 }
 \examples{  
 ##NOT RUN
-##varPlot(Prestige$income, 'Income') #default use strip
-##varPlot(Prestige$income, AddPoints='RUG')
-##varPlot(Prestige$income, IDs=rownames(Prestige))
+##data(BAC)
+##varPlot(BAC$FPS, 'FPS') #default use strip
+##varPlot(BAC$FPS, AddPoints='RUG')
+##varPlot(BAC$FPS, IDs=rownames(BAC))
 }
 \keyword{ descriptives }

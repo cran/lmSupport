@@ -17,7 +17,8 @@ Returns vector of model errors (residuals) from sample
 \seealso{residuals, lm}
 \examples{
 ##NOT RUN
-##m = lm(interlocks~assets+nation, data=Ornstein)
+##data(BAC)
+##m = lm(FPS~BAC+TA, data=BAC)
 ##modelErrors(m)
 }
 \keyword{manip}

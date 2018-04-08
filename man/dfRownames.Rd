@@ -4,7 +4,8 @@
 \description{
 Sets the row names of the data frame to the variable name listed as SubID.
 SubID should be text name of variable.  
-Also keeps number of characters constant by default and removes SubID by default
+Also keeps number of characters constant by default (numeric SubID only) 
+and removes SubID by default
 }
 \usage{
 dfRownames(Data, SubID = "SubID", FixedWidth = TRUE, Remove = TRUE, MaxNumDigits=NULL)
@@ -13,10 +14,11 @@ dfRownames(Data, SubID = "SubID", FixedWidth = TRUE, Remove = TRUE, MaxNumDigits
   \item{Data}{a data frame with a variable containing subject ID numbers}
   \item{SubID}{Text name of subject ID variable.  Default is SubID}
   \item{FixedWidth}{logical.  If TRUE (default), all rowames will be the same length 
-  by padding with leading 0's}
+  by padding with leading 0's.  Only applies to numeric SubIDs}
   \item{Remove}{logical.  If TRUE (default), the subject ID variable will be 
   removed from data frame after setting rownames}
-  \item{MaxNumDigits}{Length of rowname string.  If NULL, will be set to max length in data}
+  \item{MaxNumDigits}{Length of rowname string.  If NULL, will be set to max length in data.  Only    
+  applies to numeric SubIDs}
 }
 \value{
 Returns data frame with rownames set (and SubID removed if requested)

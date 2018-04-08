@@ -24,9 +24,8 @@ Returns original data frame (Data) with addition of new regressors.
 \author{John J. Curtin \email{jjcurtin@wisc.edu}}
 \examples{
 ##NOT RUN
-##d = Ornstein
-##contrasts(d$nation) = varContrasts(d$nation, Type='POC', 
-##   POCList = list(c(3,-1,-1, -1),c(0,2,-1, -1), c(0,0,1,-1)))
-##d = varRegressors(d,'nation')
+##data(BAC)
+##BAC$Sex = factor(BAC$Sex)
+##BAC = varRegressors(BAC,'Sex')
 }
 \keyword{regression}

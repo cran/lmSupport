@@ -26,5 +26,5 @@ Returns either power or N from analysis
 \examples{
 modelPower(pc=3, pa=4, power=.90, peta2=.157)
 modelPower(pc=1, pa=3, N=100, peta2=.157, alpha=.01)
-}
+} 
 \keyword{manip}

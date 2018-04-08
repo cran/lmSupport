@@ -23,7 +23,8 @@ Quantitative Applictions in the Social Science.
 }
 \author{John J. Curtin \email{jjcurtin@wisc.edu}}
 \examples{
-m = lm(interlocks~assets+nation, data=car::Ornstein)
+data(BAC)
+m = lm(FPS~BAC+TA, data=BAC)
 modelAssumptions(m,'NORMAL')
 modelAssumptions(m,'CONSTANT')
 modelAssumptions(m,'LINEAR', ID=NULL)

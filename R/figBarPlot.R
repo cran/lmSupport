@@ -1,4 +1,4 @@
-figBarPlot <-function(Means, ylim, lab.text=NULL, se=NULL, bars.col= NULL, bars.density=NULL, bars.angle=NULL, scale.cex=NULL, lab.cex=NULL, lab.font=NULL, ci.plot=NULL, ci.col=NULL, ci.lty=NULL, ci.lwd = NULL, ci.width = NULL)
+figBarPlot <-function(Means, ylim=NULL, lab.text=NULL, main.text=NULL, se=NULL, bars.col= NULL, bars.density=NULL, bars.angle=NULL, bars.space=NULL, scale.cex=NULL, lab.cex=NULL, lab.font=NULL, ci.plot=NULL, ci.col=NULL, ci.lty=NULL, ci.lwd = NULL, ci.width = NULL)
 {
   
   #get defaults for barplot2() if not over-rided by passing in
@@ -22,8 +22,8 @@ figBarPlot <-function(Means, ylim, lab.text=NULL, se=NULL, bars.col= NULL, bars.
            plot.ci=ci.plot, ci.l=t(ci.l), ci.u=t(ci.u), 
            ci.color=ci.col, ci.lty=ci.lty, ci.lwd=ci.lwd, ci.width=ci.width, 
            cex.names=scale.cex, font.lab=lab.font, cex.lab=lab.cex,
-           col= bars.col, density = bars.density, angle = bars.angle,
-           axes=FALSE, ylab = '', beside = TRUE)
+           col= bars.col, density = bars.density, space = bars.space, angle = bars.angle,
+           axes=FALSE, ylab = '', main = main.text, beside = TRUE)
 }
 
 

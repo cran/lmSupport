@@ -25,8 +25,8 @@ Returns a list with results for model comparison, sses, and other relevant field
 \author{John J. Curtin \email{jjcurtin@wisc.edu}}
 \examples{
 ##NOT RUN
-##mC = lm(interlocks~assets, data=Ornstein)
-##mA = lm(interlocks~assets+nation, data=Ornstein)
+##mC = lm(FPS~BAC, data=BAC)
+##mA = lm(FPS~BAC+TA, data=BAC)
 ##modelCompare(mC, mA)
 }
 \keyword{regression}

@@ -20,8 +20,8 @@ Returns table with descriptive statistics rounded to digits.
 \seealso{describe lm.describeGroups describe.by}
 \examples{
 ##NOT RUN
-##varDescribe(Ornstein)
-##varDescribe(Ornstein, Detail=3)
-##varDescribe(Ornstein, Detail=2, Digits=1)
+##varDescribe(BAC)
+##varDescribe(BAC, Detail=3)
+##varDescribe(BAC, Detail=2, Digits=1)
 }
 \keyword{manip}
